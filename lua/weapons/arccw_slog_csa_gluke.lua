@@ -78,7 +78,7 @@ SWEP.Primary.Ammo = "pistol"
 SWEP.ShootVol = 110 -- volume of shoot sound
 SWEP.ShootPitch = 100 -- pitch of shoot sound
 
-SWEP.ShootSound = "weapons/arccw_slog/fortuna/pistol/fire.wav"
+SWEP.ShootSound = "weapons/arccw_slog/csa/gluke/fire.ogg"
 SWEP.ShootSoundSilenced = "weapons/arccw_slog/fortuna/pistol/sd.wav"
 SWEP.DistantShootSound = "weapons/arccw_slog/fortuna/pistol/echo.wav"
 
