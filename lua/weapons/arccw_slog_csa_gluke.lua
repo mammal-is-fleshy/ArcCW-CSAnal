@@ -142,9 +142,9 @@ SWEP.AttachmentElements = {
     },
     ["slog_csa_gluke_slide_roni"] = {
         AttPosMods = {
-		[1] = {vpos = Vector(0, -4.25, 1.2)},
+		[1] = {vpos = Vector(0, -4.5, 1.2)},
 		[2] = {vpos = Vector(0, -3.15, 10)},		
-		[5] = {vpos = Vector(0, -0.15, 5),}
+		[5] = {vpos = Vector(1, -2.75, 6), vang = Angle(90, 0, 0),}
 		},	
         VMBodygroups = {
             {ind = 1, bg = 2},
@@ -258,7 +258,7 @@ SWEP.Attachments = {
         Slot = "foregrip",
         Bone = "W_Main", 
         Offset = {
-            vpos = Vector(0, 0, 6), 
+            vpos = Vector(0, -0.8, 7), 
             vang = Angle(90, 0, -90),
         },
         Hidden = true,

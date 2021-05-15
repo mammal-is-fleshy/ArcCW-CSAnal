@@ -1,4 +1,4 @@
-att.PrintName = "Roni Kit"
+att.PrintName = "MCK Frame"
 att.Icon = nil ---Material("entities/slog_tuna_perk_fast.png", "mips smooth")
 att.Description = "literally smg."
 att.Desc_Pros = {
