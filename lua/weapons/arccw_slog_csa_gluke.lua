@@ -142,9 +142,9 @@ SWEP.AttachmentElements = {
     },
     ["slog_csa_gluke_slide_roni"] = {
         AttPosMods = {
-		[1] = {vpos = Vector(0, -4.5, 1.2)},
+		[1] = {vpos = Vector(0, -4.65, 1.2)},
 		[2] = {vpos = Vector(0, -3.15, 10)},		
-		[5] = {vpos = Vector(1, -2.75, 6), vang = Angle(90, 0, 0),}
+		[5] = {vpos = Vector(1, -2.85, 6), vang = Angle(90, 0, 0),}
 		},	
         VMBodygroups = {
             {ind = 1, bg = 2},
@@ -193,7 +193,7 @@ SWEP.Attachments = {
         Slot = "optic_lp",
         Bone = "W_Main", 
         Offset = {
-            vpos = Vector(0, -4.6, 1.2), 
+            vpos = Vector(0, -4.65, 1.2), 
             vang = Angle(90, 0, -90),
         },			
         InstalledEles = {"rail"},	
@@ -245,7 +245,7 @@ SWEP.Attachments = {
         Slot = "optic",
         Bone = "W_Main", 
         Offset = {
-            vpos = Vector(0, -4.3, 1.2), 
+            vpos = Vector(0, -4.55, 1.2), 
             vang = Angle(90, 0, -90),
         },
         Hidden = true,
