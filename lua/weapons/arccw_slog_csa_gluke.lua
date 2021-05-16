@@ -136,9 +136,8 @@ SWEP.AttachmentElements = {
         },	
     },
     ["slog_csa_gluke_slide_18"] = {
-        VMBodygroups = {
-            {ind = 1, bg = 1},		
-        },
+        VMBodygroups = {{ind = 1, bg = 1},},
+        Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},			
     },
     ["slog_csa_gluke_slide_roni"] = {
         AttPosMods = {
@@ -155,11 +154,7 @@ SWEP.AttachmentElements = {
         Override_CrouchAng = Angle(0, 0, -10),		
         Override_HolsterPos = Vector(2,5,-4),
         Override_HolsterAng = Angle(7.036, 30.016, -30),	
-        Override_IronSightStruct = {
-            Pos = Vector(-2.481, 5, -0.7),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.1,
-        },		
+        Override_IronSightStruct = {Pos = Vector(-2.481, 5, -0.7),Ang = Angle(0, 0, 0),Magnification = 1.1,},		
     },	
     ["slog_csa_gluke_mag_x"] = {
         VMBodygroups = {
