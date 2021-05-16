@@ -188,7 +188,7 @@ SWEP.Attachments = {
         Slot = "optic_lp",
         Bone = "W_Main", 
         Offset = {
-            vpos = Vector(0, -4.65, 1.2), 
+            vpos = Vector(0, -4.65, 2), 
             vang = Angle(90, 0, -90),
         },			
         InstalledEles = {"rail"},	
