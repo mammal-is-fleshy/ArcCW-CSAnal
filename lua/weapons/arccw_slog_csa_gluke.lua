@@ -123,11 +123,14 @@ SWEP.ShellRotateAngle = Angle(5, 0, 40)
 SWEP.ExtraSightDist = 7
 
 SWEP.AttachmentElements = {	
-    ["rail"] = {
-        VMBodygroups = {
-            {ind = 3, bg = 1},		
-        },	
-    },
+    ["rail"] = {VMBodygroups = {{ind = 3, bg = 1},},	},
+    ["slog_csa_gluke_grip"] = {VMBodygroups = {{ind = 4, bg = 1},},},	
+	
+    ["slog_csa_gluke_stock"] = {VMBodygroups = {{ind = 5, bg = 1},},},
+    ["slog_csa_gluke_stock_rh5b"] = {VMBodygroups = {{ind = 5, bg = 4},},},	
+    ["slog_csa_gluke_stock_r57"] = {VMBodygroups = {{ind = 5, bg = 3},},},	
+    ["slog_csa_gluke_stock_rm4"] = {VMBodygroups = {{ind = 5, bg = 5},},},		
+	
     ["slog_csa_gluke_slide_18"] = {
         VMBodygroups = {{ind = 1, bg = 1},},
         Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},			
@@ -140,7 +143,8 @@ SWEP.AttachmentElements = {
 		},	
         VMBodygroups = {
             {ind = 1, bg = 2},
-            {ind = 3, bg = 2},				
+            {ind = 3, bg = 2},		
+            {ind = 5, bg = 2},					
         },
         Override_ActivePos = Vector(1, 2, -0.5),
         Override_CrouchPos = Vector(-2, 2, -0.5),	
@@ -163,7 +167,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
-    if wep.Attachments[3].Installed == "slog_csa_gluke_slide_roni" and (wep.Attachments[1].Installed or wep.Attachments[8].Installed) then vm:SetBodygroup(3, 0) end
+    if wep.Attachments[3].Installed == "slog_csa_gluke_slide_roni" and (wep.Attachments[1].Installed or wep.Attachments[10].Installed) then vm:SetBodygroup(3, 0) end
 end
 
 
@@ -185,7 +189,7 @@ SWEP.Attachments = {
             vang = Angle(90, 0, -90),
         },			
         InstalledEles = {"rail"},	
-        MergeSlots = {8},		
+        MergeSlots = {10},		
     },
     {
         PrintName = "Muzzle",
@@ -217,9 +221,24 @@ SWEP.Attachments = {
         Offset = {
             vpos = Vector(0, -2, 6.5), 
             vang = Angle(90, 0, -90),
-        },
-        MergeSlots = {9},		
+        },	
     },	
+    {
+        PrintName = "Grip",
+        Slot = {"csa_gluke_grip"},
+        Bone = "W_Main", 
+        Offset = {
+            vpos = Vector(0, -3.8, 1.5), 
+            vang = Angle(90, 0, -90),
+        },	
+        MergeSlots = {11},			
+    },	
+    {
+        PrintName = "Stock",
+        Slot = {"csa_gluke_stock"},
+        Bone = "W_Main", 
+        MergeSlots = {12},			
+    },		
     {
         PrintName = "Ammo Type",
         Slot = {"go_ammo"}
@@ -253,6 +272,18 @@ SWEP.Attachments = {
         HideIfBlocked = true,
         RequireFlags = {"slog_csa_gluke_slide_roni"},
     },	
+	
+    { 
+        Slot = "csa_gluke_stock_roni",
+        Bone = "W_Main", 
+        Offset = {
+            vpos = Vector(0, -0.8, 7), 
+            vang = Angle(90, 0, -90),
+        },
+        Hidden = true,
+        HideIfBlocked = true,
+        RequireFlags = {"slog_csa_gluke_slide_roni"},
+    },		
 }
 
 SWEP.Hook_SelectReloadAnimation = function(wep, anim) --- hierarchy ---
