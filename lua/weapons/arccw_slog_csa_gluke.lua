@@ -4,9 +4,8 @@ SWEP.Category = "ArcCW - CSA" -- edit this if you like
 SWEP.AdminOnly = false
 
 SWEP.PrintName = "PP-A9"
-SWEP.TrueName = "Glock 18"
 SWEP.Trivia_Class = "Machine Pistol"
-SWEP.Trivia_Desc = "9mm fully automatic police machine pistol. Low damage, but a sophisticated recoil control system allows for excellent automatic performance."
+SWEP.Trivia_Desc = "9x19mm fully automatic police machine pistol.\nThe round is poor against armor, but access to an automatic modkit will provide you with excellent automatic performance to make up the difference."
 SWEP.Trivia_Manufacturer = "Auschen Waffenfabrik"
 SWEP.Trivia_Calibre = "9x19mm Para"
 SWEP.Trivia_Mechanism = "Short Recoil"
@@ -15,17 +14,8 @@ SWEP.Trivia_Year = 1989
 
 SWEP.Slot = 1
 
-if GetConVar("arccw_truenames"):GetBool() then
-    SWEP.PrintName = SWEP.TrueName
-    SWEP.Trivia_Manufacturer = "Glock Ges.m.b.H."
-    SWEP.Trivia_Country = "Germany"
-end
-
-SWEP.CrouchPos = Vector(-0.5, 2, -1)
-SWEP.CrouchAng = Angle(0, 0, -10)
-
 SWEP.NPCWeaponType = "weapon_pistol"
-SWEP.NPCWeight = 250
+SWEP.NPCWeight = 100
 
 ---SWEP.CamAttachment = 3 does this even work?????
 
@@ -125,8 +115,11 @@ SWEP.CustomizeAng = Angle(0, 23.763, 29.01)
 
 SWEP.BarrelOffsetSighted = Vector(0, 0, -1)
 SWEP.BarrelOffsetHip = Vector(2, 0, -2)
-SWEP.ShellRotateAngle = Angle(5, 0, 40)
 
+SWEP.CrouchPos = Vector(-0.5, 2, -1)
+SWEP.CrouchAng = Angle(0, 0, -10)
+
+SWEP.ShellRotateAngle = Angle(5, 0, 40)
 SWEP.ExtraSightDist = 7
 
 SWEP.AttachmentElements = {	
