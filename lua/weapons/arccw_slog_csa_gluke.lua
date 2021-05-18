@@ -137,7 +137,8 @@ SWEP.AttachmentElements = {
     },
     ["slog_csa_gluke_slide_sd"] = {
         VMBodygroups = {{ind = 1, bg = 3},},
-        Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},			
+        Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},	
+        AttPosMods = {[5] = {vpos = Vector(0, -0.6, 7.5)}},			
     },	
     ["slog_csa_gluke_slide_roni"] = {
         AttPosMods = {
