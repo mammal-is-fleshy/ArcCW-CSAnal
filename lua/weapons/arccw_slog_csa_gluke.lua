@@ -135,6 +135,10 @@ SWEP.AttachmentElements = {
         VMBodygroups = {{ind = 1, bg = 1},},
         Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},			
     },
+    ["slog_csa_gluke_slide_sd"] = {
+        VMBodygroups = {{ind = 1, bg = 3},},
+        Override_IronSightStruct = {Pos = Vector(-2.481, 10, 0.92),Ang = Angle(0, 0, 0),Magnification = 1.1,},			
+    },	
     ["slog_csa_gluke_slide_roni"] = {
         AttPosMods = {
 		[1] = {vpos = Vector(0, -4.65, 1.2)},
@@ -168,6 +172,7 @@ SWEP.AttachmentElements = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local vm = data.vm
     if wep.Attachments[3].Installed == "slog_csa_gluke_slide_roni" and (wep.Attachments[1].Installed or wep.Attachments[10].Installed) then vm:SetBodygroup(3, 0) end
+    if wep.Attachments[3].Installed == "slog_csa_gluke_slide_sd" and (wep.Attachments[1].Installed or wep.Attachments[10].Installed) then vm:SetBodygroup(3, 3) end	
 end
 
 
@@ -200,6 +205,7 @@ SWEP.Attachments = {
             vpos = Vector(0, -3.15, 8),
             vang = Angle(90, 0, -90),
         },
+        ExcludeFlags = {"slog_csa_gluke_slide_sd"}		
     },
     {
         PrintName = "Slide",
